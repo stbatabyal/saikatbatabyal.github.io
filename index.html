@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dr. Saikat Batabyal | Academic Website</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 0; line-height: 1.7; display: flex; color: #222; }
+
+    .sidebar {
+      width: 300px;
+      background: #1f2a36;
+      color: white;
+      min-height: 100vh;
+      padding: 25px;
+      box-sizing: border-box;
+      position: fixed;
+    }
+
+    .sidebar img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 15px;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+
+    .sidebar h2 { text-align: center; margin: 10px 0 5px; }
+    .sidebar p { text-align: center; font-size: 14px; color: #bbb; }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 12px 0;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .sidebar a:hover { text-decoration: underline; }
+
+    .cv-button {
+      display: block;
+      margin: 20px auto;
+      padding: 8px 12px;
+      background: #34495e;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      width: fit-content;
+    }
+
+    .content {
+      margin-left: 320px;
+      padding: 40px;
+      max-width: 900px;
+    }
+
+    h1 { margin-top: 0; font-size: 28px; }
+
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+      margin-top: 40px;
+      font-size: 22px;
+    }
+
+    ul { padding-left: 20px; }
+
+    .pub a { color: #2c3e50; text-decoration: none; }
+    .pub a:hover { text-decoration: underline; }
+
+    .tag {
+      display: inline-block;
+      background: #eee;
+      padding: 3px 8px;
+      margin: 3px;
+      font-size: 12px;
+      border-radius: 4px;
+    }
+
+    footer { margin-top: 40px; font-size: 14px; color: #777; }
+
+    @media (max-width: 768px) {
+      body { flex-direction: column; }
+      .sidebar { position: relative; width: 100%; }
+      .content { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidebar">
+  <img src="profile.jpg" alt="Profile Photo">
+  <h2>Dr. Saikat Batabyal</h2>
+  <p>Assistant Professor | Department of Biotechnology | Faculty of Life & Allied Health Sciences | Ramaiah University of Applied Science, Bangalore, India</p>
+
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#publications">Publications</a>
+  <a href="#team">Team</a>
+  <a href="#grants">Grants</a>
+  <a href="#open position">Open Position</a>
+  <a href="#teaching">Teaching</a>
+  <a href="#contact">Contact</a>
+
+  <a href="cv.pdf" class="cv-button">Download CV</a>
+</div>
+
+<div class="content">
+
+<section id="about">
+  <h1>About Me</h1>
+  <p>
+   I am working on developing models for within-host dynamics of pathogens and investigating the progression from Mycobacterium tuberculosis (Mtb) infection to Tuberculosis (TB). This involves creating epidemiological models to understand the protective effects of prior Mtb infection and identifying individuals who would benefit most from preventative treatments. My research also explores T cell dynamics and the integration of experimental data into model construction, using techniques like R, Python for model fitting. I am dedicated to advancing TB control through simulations that evaluate public health interventions, such as vaccination and treatment adherence programs.
+   I aim to integrate mathematical modeling with biomedical science to enhance Translational Research, ultimately benefiting societal health outcomes.
+  </p>
+</section>
+
+<section id="research">
+  <h2>Research Interests</h2>
+  <div>
+    <span class="tag">Host-pathogen interactions in Tuberculosis</span>
+    <span class="tag">Mathematical & Systems Modeling</span>
+    <span class="tag">Infectious Disease Epidemiology</span>
+    <span class="tag">Immunological Dynamics</span>
+    <span class="tag">Machine learning in biomedical data</span>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Publications</h2>
+  <ul>
+    <li class="pub">
+      <b>Your Name</b> et al. (2025). Title of paper. <i>Journal Name</i>.
+      [<a href="#">PDF</a>] [<a href="#">DOI</a>] [<a href="#">Scholar</a>]
+    </li>
+    <li class="pub">
+      <b>Your Name</b> et al. (2024). Another paper. <i>Journal Name</i>.
+      [<a href="#">PDF</a>] [<a href="#">DOI</a>]
+    </li>
+  </ul>
+</section>
+
+<section id="students">
+  <h2>Students</h2>
+  <ul>
+    <li>Anuja Jatti – M.Sc.</li>
+  </ul>
+</section>
+
+<section id="grants">
+  <h2>Grants & Funding</h2>
+  <ul>
+    <li>Coming Soon...</li>
+  </ul>
+</section>
+
+  <section id="open position">
+  <h2>Open Position</h2>
+  <ul>
+    <li>PhD - Coming Soon...</li>
+    <li>Masters – Coming Soon...</li>
+    <li>Postdoc - Coming Soon...</li>
+  </ul>
+</section>
+
+<section id="teaching">
+  <h2>Teaching</h2>
+  <ul>
+    <li>Bioinformatics</li>
+    <li>Mathematical Biology</li>
+    <li>Immuno-informatics</li>
+    </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email:stbatabyal@gmail.com</p>
+  <p>Email:saikatbatabyal.bt.ls@msruas.ac.in</p>
+  <p>
+        <a href="https://scholar.google.com/citations?user=X0unSjkAAAAJ&hl=en">Google Scholar</a> | 
+        <a href="https://orcid.org/0000-0001-8310-7492">ORCID</a> 
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Dr. Saikat Batabyal</p>
+</footer>
+
+</div>
+
+</body>
+</html>
