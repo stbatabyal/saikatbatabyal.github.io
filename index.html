@@ -1,93 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Saikat Batabyal | Academic Website</title>
-  
-<style>
-body {
-  margin: 0;
-  font-family: Georgia, serif;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dr. Saikat Batabyal | Academic Website</title>
+  <style>
+    body { font-family: Georgia, serif; margin: 0; line-height: 1.7; display: flex; color: #222; }
 
-/* MAIN SPLIT CONTAINER */
-.container {
-  display: flex;
-  height: 100vh;
-}
+    .sidebar {
+      width: 300px;
+      background: #1f2a36;
+      color: white;
+      min-height: 100vh;
+      padding: 25px;
+      box-sizing: border-box;
+      position: fixed;
+    }
 
-/* LEFT SIDE (UNIVERSITY IMAGE) */
-.left {
-  flex: 1;
-  background: url('images/university.jpg') center/cover no-repeat;
-}
+    .sidebar img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 15px;
+      object-fit: cover;
+      border: 3px solid white;
+    }
 
-/* RIGHT SIDE (CONTENT) */
-.right {
-  flex: 1;
-  background: #f9f9f9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  text-align: center;
-}
+    .sidebar h2 { text-align: center; margin: 10px 0 5px; }
+    .sidebar p { text-align: center; font-size: 14px; color: #bbb; }
 
-/* PROFILE PHOTO */
-.profile {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 12px 0;
+      text-align: center;
+      font-size: 15px;
+    }
 
-/* TEXT */
-h1 {
-  margin: 10px 0;
-}
+    .sidebar a:hover { text-decoration: underline; }
 
-p {
-  max-width: 400px;
-}
+    .cv-button {
+      display: block;
+      margin: 20px auto;
+      padding: 8px 12px;
+      background: #34495e;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      width: fit-content;
+    }
 
-/* BUTTONS */
-.buttons {
-  margin-top: 20px;
-}
+    .content {
+      margin-left: 320px;
+      padding: 40px;
+      max-width: 900px;
+    }
 
-.buttons a {
-  text-decoration: none;
-  color: black;
-  border: 1px solid black;
-  padding: 10px 15px;
-  margin: 5px;
-  display: inline-block;
-  border-radius: 4px;
-}
+    h1 { margin-top: 0; font-size: 28px; }
 
-.buttons a:hover {
-  background: black;
-  color: white;
-}
+    h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+      margin-top: 40px;
+      font-size: 22px;
+    }
 
-</style>
+    ul { padding-left: 20px; }
+
+    .pub a { color: #2c3e50; text-decoration: none; }
+    .pub a:hover { text-decoration: underline; }
+
+    .tag {
+      display: inline-block;
+      background: #eee;
+      padding: 3px 8px;
+      margin: 3px;
+      font-size: 12px;
+      border-radius: 4px;
+    }
+
+    footer { margin-top: 40px; font-size: 14px; color: #777; }
+
+    @media (max-width: 768px) {
+      body { flex-direction: column; }
+      .sidebar { position: relative; width: 100%; }
+      .content { margin-left: 0; }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="container">
+<div class="sidebar">
 
-  <!-- LEFT: UNIVERSITY IMAGE -->
-  <div class="left"></div>
-
-  <!-- RIGHT: YOUR INFO -->
-  <div class="right">
-
-    <img src="images/profile.jpg" class="profile" alt="Your Photo">
-  <h1>Dr. Saikat Batabyal</h1>
+<img src="images/profile.jpg" alt="Your Photo">
+  <h2>Dr. Saikat Batabyal</h2>
   <p>Assistant Professor | Department of Biotechnology | Faculty of Life & Allied Health Sciences | Ramaiah University of Applied Science, Bangalore, India</p>
 
   <a href="#about">About</a>
