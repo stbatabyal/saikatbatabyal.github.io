@@ -12,10 +12,31 @@
   line-height: 1.6;
 }
 
-    .contact-photo {
-  width: 120px;
-  border-radius: 50%;
-  margin-bottom: 15px;
+    /* CONTACT SECTION LAYOUT */
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 30px;
+}
+
+/* LEFT SIDE */
+.contact-text {
+  flex: 1;
+  font-size: 15px;
+}
+
+/* RIGHT SIDE */
+.contact-image {
+  flex: 1;
+  text-align: right;
+}
+
+.contact-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
 }
 
     .uni-name {
@@ -222,9 +243,11 @@
 
 <section id="contact">
 
-<div class="contact">
+  <div class="contact-section">
 
-  <h2>Contact</h2>
+  <!-- LEFT: CONTACT DETAILS -->
+  <div class="contact-text">
+    <h2>Contact</h2>
   <p>Email: stbatabyal@gmail.com</p>
   <p>Email: saikatbatabyal.bt.ls@msruas.ac.in</p>
     <p class="uni-name">Ramaiah University of Applied Sciences</p>
@@ -234,7 +257,12 @@
         <a href="https://scholar.google.com/citations?user=X0unSjkAAAAJ&hl=en">Google Scholar</a> | 
         <a href="https://orcid.org/0000-0001-8310-7492">ORCID</a> 
   </p>
-   <img src="university.jpg" class="contact-photo">
+  </div>
+
+  <!-- RIGHT: UNIVERSITY IMAGE -->
+  <div class="contact-image">
+    <img src="university.jpg" alt="University">
+  </div>
 
 </div>
 
